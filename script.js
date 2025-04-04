@@ -1,4 +1,4 @@
- function soma (quantidade){
+ /*function soma (quantidade){
  let total= 0;
 
  for (let i=0; i<quantidade; i++){
@@ -10,7 +10,13 @@
 
  let quantidade = parseInt(prompt("Quantos números voce quer somar?"));
  let resultado = soma(quantidade);
- alert ("o resultado final é:" +resultado);
+ alert ("o resultado final é: " +resultado);
+*/
+
+
+
+
+
 
 
 
