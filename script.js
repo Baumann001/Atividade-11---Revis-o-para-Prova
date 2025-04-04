@@ -14,7 +14,17 @@
 */
 
 
+ let i=10
 
+ const intervalo= setInterval(() =>{
+    if (i>=0){
+        console.log(i);
+        i--;
+    }else{
+        clearInterval(intervalo);
+        alert("Lançamento!")
+ }
+},1000);
 
 
 
