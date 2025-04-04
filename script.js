@@ -1,7 +1,7 @@
- function soma (numero) {
+ function soma (numero){
  let total= 0;
 
- for (let i=0; i<0; i++){
+ for (let i=0; i<numero; i++){
     let valor = parseFloat(prompt(` digite o ${ i +1} número:`));
     total += valor;
  }
