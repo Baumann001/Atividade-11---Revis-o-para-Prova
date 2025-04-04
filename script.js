@@ -14,7 +14,7 @@
 */
 
 
- let i=10
+  /*let i=10
 
  const intervalo= setInterval(() =>{
     if (i>=0){
@@ -25,6 +25,17 @@
         alert("Lançamento!")
  }
 },1000);
+*/
+
+ function tristeRealidade(ganhos){
+    let totalGanhos = 0;
+    let totalGastos = 0;
+    
+    for (let mes=1; mes<=12; mes++){
+
+ let totaldeGanhos= parseFloat(prompt(`qual o ganho bruto do mes ${mes}:`));
+ let gastosMensais= parseFloat(prompt(`Qual foi o gasto do mes? ${mes}`));
+}
 
 
 
