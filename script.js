@@ -10,7 +10,7 @@
 
  let quantidade = parseInt(prompt("Quantos números voce quer somar?"));
  let resultado = soma(quantidade);
- console.log(" o resultado final é:", resultado);
+ alert(" o resultado final é:", resultado);
 
 
 
