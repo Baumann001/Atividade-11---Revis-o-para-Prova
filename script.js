@@ -5,6 +5,8 @@
     let valor = parseFloat(prompt(` digite o ${ i +1} número:`));
     total += valor;
  }
+ return total;
+}
 
  let quantidade = parseInt(prompt("Quantos números voce quer somar?"));
  let resultado = soma(quantidade);
