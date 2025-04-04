@@ -6,8 +6,8 @@
     total += valor;
  }
 
- let quantidade = parseInt(prompt("Quantos números voce quer somar?"));
- let total = quantidade(soma);
+ let numero = parseInt(prompt("Quantos números voce quer somar?"));
+ let total = numero(soma);
  console.log(" o resultado final é:", resultado);
 
 
