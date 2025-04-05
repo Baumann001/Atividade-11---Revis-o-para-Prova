@@ -27,19 +27,40 @@
 },1000);
 */
 
- function tristeRealidade(ganhos){
-    let totalGanhos = 0;
-    let totalGastos = 0;
-    
-    for (let mes=1; mes<=12; mes++){
-
- let totaldeGanhos= parseFloat(prompt(`qual o ganho bruto do mes ${mes}:`));
- let gastosMensais= parseFloat(prompt(`Qual foi o gasto do mes? ${mes}`));
-}
-
-
-
-
-
-
+function balancoFinanceiroAnual() {
+   let totalGanhos = 0;
+   let totalGastos = 0;
+ 
+   for (let mes = 1; mes <= 12; mes++) {
+     let ganhoMensal = parseFloat(prompt(`Digite o ganho bruto do mês ${mes}:`));
+     let gastoMensal = parseFloat(prompt(`Digite o gasto do mês ${mes}:`));
+ 
+     if (isNaN(ganhoMensal) || isNaN(gastoMensal)) {
+       alert("Por favor, insira valores numéricos válidos.");
+       mes--; // Repete o mês atual
+       continue;
+     }
+ 
+     totalGanhos += ganhoMensal;
+     totalGastos += gastoMensal;
+   }
+ 
+   let saldoFinal = totalGanhos - totalGastos;
+   let mensagem = `Total de ganhos: R$ ${totalGanhos.toFixed(2)}\n` +
+                  `Total de gastos: R$ ${totalGastos.toFixed(2)}\n` +
+                  `Saldo final: R$ ${saldoFinal.toFixed(2)}\n`;
+ 
+   if (saldoFinal > 0) {
+     mensagem += "A empresa teve lucro no ano.";
+   } else if (saldoFinal < 0) {
+     mensagem += "A empresa teve prejuízo no ano.";
+   } else {
+     mensagem += "A empresa não teve lucro nem prejuízo no ano.";
+   }
+ 
+   alert(mensagem);
+ }
+ 
+ // Chamada da função
+ balancoFinanceiroAnual();
  
